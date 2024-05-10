@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Galería</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button class="custom-button" routerLink="/home">
+    Volver a Home
+  </ion-button>
+
+  <ion-card *ngFor="let foto of fotosService.obtenerFotos()">
+    <ion-card-content>
+      <img [src]="foto" alt="Foto">
+    </ion-card-content>
+  </ion-card>
+</ion-content>

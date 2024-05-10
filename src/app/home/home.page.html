@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cámara</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="div2">
+    <a routerLink="/galeria">
+      <img [src]="fotosService.obtenerUltimaFoto()" alt="Última Foto" class="img1">
+    </a>
+  </div>
+
+  <div>
+    <ion-button fill="outline" class="circle-button" (click)="getPicture()">
+      <ion-icon name="ellipse"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>

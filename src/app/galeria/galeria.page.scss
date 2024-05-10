@@ -1,0 +1,31 @@
+.custom-button {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  --background: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.custom-button:hover {
+  --background: #e63900;
+}
+
+ion-header {
+  ion-toolbar {
+    --background: #fafafa;
+    --color: #000000;
+
+    ion-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px #46464680;
+    }
+  }
+}
